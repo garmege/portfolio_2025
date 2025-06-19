@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
                  // 1. CSS 동적 로드
                 const popupCSS = document.createElement('link');
                 popupCSS.rel = 'stylesheet';
-                popupCSS.href = '../css/popup.css'; // popup.html에 맞는 CSS 경로
+                popupCSS.href = '/css/popup.css'; // popup.html에 맞는 CSS 경로
                 document.head.appendChild(popupCSS);
 
                 // 2. JS 동적 로드
                 const popupScript = document.createElement('script');
-                popupScript.src = '../js/popup_cont_load.js'; // popup.html용 JS
+                popupScript.src = '/js/popup_cont_load.js'; // popup.html용 JS
                 popupScript.defer = true; // 로딩 순서 안정성 확보
                 document.body.appendChild(popupScript);
             })
