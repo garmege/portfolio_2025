@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.item_wrap .item').forEach(function (item) {
         item.addEventListener('click', function () {
             const portfolioName = item.getAttribute('data-portfolio');
-            const filePath = `popup/portfolio/${portfolioName}_popup.html`;
+            const filePath = `html/popup/portfolio/${portfolioName}_popup.html`;
 
             fetch(filePath)
             .then(response => {
@@ -21,12 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
                  // 1. CSS 동적 로드
                 const popupCSS = document.createElement('link');
                 popupCSS.rel = 'stylesheet';
-                popupCSS.href = '/css/popup.css'; // popup.html에 맞는 CSS 경로
+                popupCSS.href = 'css/popup.css'; // popup.html에 맞는 CSS 경로
                 document.head.appendChild(popupCSS);
 
-                // 2. JS 동적 로드
-                const popupScript = document.createElement('script');
-                popupScript.src = '/js/popup_cont_load.js'; // popup.html용 JS
                 popupScript.defer = true; // 로딩 순서 안정성 확보
                 document.body.appendChild(popupScript);
             })
