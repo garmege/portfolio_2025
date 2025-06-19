@@ -1,0 +1,509 @@
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .center {
+    position: relative;
+    width: 100%;
+    padding: 0 20%;
+    height:100%;
+    overflow:hidden;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 40px 20%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    transition: transform 1s ease; 
+}
+
+#page_1 {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center h1 {
+    font-size: 18rem;
+    font-weight: 800;
+    position: relative;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    background-color: #FFD400;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: -110px;
+    left: -10px;
+    margin-right: 10px;
+}
+
+.tags {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.tag {
+    color: #5a5a5a;
+    background-color: #ffffff;
+    border: 1px solid white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 99rem;
+    font-size: 2rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tag:hover {
+    background-color: #e9e9e9;
+    border: 1px solid #e9e9e9;
+}
+
+.tag:active {
+    background-color: #c8e1fd;
+    border: 1px solid #c8e1fd;
+}
+
+.btn_click_msg {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+/*프로필 페이지*/
+#page_2 {
+    justify-content: space-between;
+}
+
+.profile_image {
+    font-size: 1.6rem;
+    color: #272727;
+    font-weight: 400;
+    margin-right: 8rem;
+}
+
+.profile_image .image_box {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.profile_image .image_box img {
+    width: 100%;
+}
+
+.profile_image .name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+}
+
+.info_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.info_box .info {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.info .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.info .icon img {
+    width: 100%;
+}
+
+.table_wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.table_unit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem 14rem;
+    overflow: hidden;
+}
+
+#page_3 .table_unit {
+    flex-direction: row;
+    height: 100%;
+    gap:10%;
+    justify-content: space-between;
+}
+
+#page_3 .table_unit table {
+    width: unset;
+    flex-basis: 40%;
+    flex-grow: 1;
+    height: 100%;
+    display: block;
+}
+
+.table_unit table {
+    border-top: 1px solid #5c5c5c;
+    flex-shrink: 0;
+    width: 50%;
+    border-collapse: collapse;
+    overflow: auto;
+    word-break: keep-all;
+}
+
+thead, tbody {
+    display: block;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.mini_blue {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0075ff;
+}
+
+tbody tr {
+    border-top: 1px solid #cccccc;
+    padding: 10px 0;
+    display: flex;
+}
+
+tbody tr:hover {
+    background-color: rgba(0,0,0,0.03);
+} 
+
+tbody tr td {
+    display: flex;
+    width: 100%;
+}
+
+td .period {
+    width: 8rem;
+    font-size: 1.4rem;
+    color: #313131;
+    flex-shrink: 0;
+}
+
+.main_black {
+    font-weight: 600;
+    color: #272727;
+    font-size: 1.7rem;
+}
+
+.sub_black {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.mini_gray {
+    font-size: 1.6rem;
+    color: #848484;
+    font-weight: 400;
+}
+
+.mini_black {
+    color: #454545;
+    font-weight: 500;
+}
+
+td .detail {
+    flex-grow: 1;
+}
+
+
+/*포트폴리오 페이지*/
+.portfolio {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    word-break: keep-all;
+}
+
+.portfolio .left {
+    width: 24%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.panel_title {
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.guide_text {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.portfolio .right {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.portfolio .right .item_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    align-items: start;
+    justify-content: space-between;
+    padding: 0 4rem 2rem;
+}
+
+.portfolio .right .item_wrap .item {
+    flex-basis: 49%;
+    position: relative;
+}
+
+.item {
+    background-color: #ffffff;    
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.item .image_box {
+    z-index: 0;
+    padding: 4rem;
+}
+
+.item:hover {
+    box-shadow: 0.4rem 0.4rem 2rem 0rem rgba(0,0,0,0.2);
+}
+
+.item .image_box img {
+    width: 100%;
+}
+
+.item .project_text {
+    width: 100%;
+    padding: 2.6rem;
+    background-color: rgba(30,131,235,0.05);
+}
+
+.item .project_text h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+@media screen and (max-width:1920px) {
+    main .center {
+        padding: 0 10%;
+    }
+
+    .page {
+        padding: 40px 10%;
+    }
+
+    .center h1 {
+        font-size: 16rem;
+    }
+
+    .tags {
+        margin-top: 0;
+    }
+
+    .table_unit {
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 2rem 0;
+    }
+
+    .table_unit table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    main .center {
+        padding: 0;
+    }
+
+    .page {
+        padding: 40px 4%;
+    }
+
+    #page_3 .table_unit {
+        gap: 6%;
+    }
+
+    .portfolio .right .item_wrap {
+        gap: 2%;
+    }
+
+    .portfolio .right .item_wrap .item {
+        flex-basis: 49%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #page_2 {
+        flex-direction: column;
+    }
+
+    .profile_image {
+        display: flex;
+        width: 100%;
+        margin-right: unset;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+
+    .profile_image .image_box {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: unset;
+    }
+
+    .profile_image .name {
+        margin-bottom: unset;
+    }
+
+    .info_box {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .table_wrap {
+        overflow-y: auto;
+    }
+
+    #page_3 .table_unit {
+        flex-direction: column;
+    }
+
+    #page_3 .table_unit table {
+        flex-basis: unset;
+        height: unset;
+    }
+
+    .portfolio {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .portfolio .left {
+        width: 100%;
+        height:auto;
+        margin-bottom: 2rem;
+    }
+
+    .panel_title {
+        margin-bottom: 1rem;
+    }
+
+    .guide_text br {
+        display: none;
+        width: 10px;
+        height: 10px;
+    }
+
+    .portfolio .right {
+        height: unset;
+    }
+
+    .portfolio .right .item_wrap {
+        padding: 0;
+        overflow-y: hidden;
+        gap: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dot {
+        top: -30px;
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+    }
+
+    .center h1 {
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .tag {
+        padding: 1.6rem;
+        font-size: 1.8rem;
+    }
+
+    .tags {
+        flex-direction: column;
+    }
+
+    .page {
+        padding: 2rem;
+        overflow-y: auto;
+    }
+
+    .info_box {
+        flex-direction: column;
+    }
+
+    .table_wrap {
+        width: 100%;
+        height: 100%;
+        overflow: unset;
+    }
+
+    .table_unit {
+        overflow: unset;
+        height: unset;
+        padding-bottom: 20px;
+    }
+
+    #page_3 .table_unit {
+        height: unset;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .portfolio .right .item_wrap .item {
+        flex-basis: 100%;
+    }
+}

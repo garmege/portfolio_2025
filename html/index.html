@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정예슬 웹디자이너 포트폴리오</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--페이지 전환 기능-->
+    <script src="../js/index_page_change.js"></script>
+    <!--팝업 기능-->
+    <script src="../js/popup_display.js"></script>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <div class="left">정예슬</div>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <button>홈</button>
+                    </li>
+                    <li>
+                        <button>프로필</button>
+                    </li>
+                    <li>
+                        <button>작업물&참여프로젝트 목록</button>
+                    </li>
+                    <li>
+                        <button>포트폴리오</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">웹디자이너</div>
+            <button class="white" id="ham_btn"></button>
+        </div>
+    </header>
+    <main>
+        <div class="center">
+            <!--표지 페이지-->
+            <div class="page" id="page_1">
+                <h1><span class="dot"></span>포트폴리오</h1>
+                <div class="tags">
+                    <button class="tag" id="profile_open">프로필</button>
+                    <button class="tag" id="works_list_open">작업물&참여프로젝트 목록</button>
+                    <button class="tag" id="portfolio_open">포트폴리오</button>
+                </div>
+                <p class="btn_click_msg">↑ 버튼을 클릭해주세요</p>
+            </div>
+            <!--프로필 페이지-->
+            <div class="page" id="page_2">
+               <div class="profile_image">
+                    <div class="image_box">
+                        <img src="../img/profile/profile_image.png" alt="">
+                    </div>
+                    <div class="name">정예슬</div>
+                    <div class="info_box">
+                        <div class="info">
+                            <div class="icon">
+                                <img src="../img/profile/phone.png" alt="연락처처">
+                            </div>
+                            <p class="text">
+                               010-6520-6524 
+                            </p>
+                        </div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="../img/profile/mail.png" alt="메일">
+                            </div>
+                            <p class="text">
+                               yesull@naver.com 
+                            </p>
+                        </div>
+                        <div class="info">
+                            <div class="icon">
+                                <img src="../img/profile/home.png" alt="거주지역">
+                            </div>
+                            <p class="text">
+                                서울특별시 관악구 신림동
+                            </p>
+                        </div>
+                    </div>
+               </div>
+               <!--남은 공간 전부 차지-->
+               <div class="table_wrap">
+                    <div class="table_unit">
+                        <!--경력 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>경력<span class="mini_blue">총 3년 1개월</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.12 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="mini_gray">
+                                                연구개발팀 · 연구원/팀원 3년차 · 웹디자인
+                                            </div>
+                                            <div class="main_black">
+                                                ㈜슈타트
+                                            </div>
+                                            <div class="sub_black">
+                                                지도 서비스(GIS) 기반의 모바일 웹/앱 디자인 및 퍼블리싱
+                                                <br>
+                                                사내 디자인 업무(브로슈어, 회사 홈페이지, 명함 등) 전반 담당
+                                            </div>
+                                            <div class="mini_gray">
+                                                연봉 : <span class="mini_black">2,800만원</span>
+                                                |  근무지역 : <span class="mini_black">대구</span>
+                                                |  퇴사사유 : <span class="mini_black">대구→안양 이사</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--학력 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>학력</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2015.03 ~ 2020.02</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                홍익대학교(세종) 프로덕트디자인과 졸업
+                                            </div>
+                                            <div class="mini_gray">
+                                                학점 : <span class="mini_black">3.64/4.5</span>
+                                                |  지역 : <span class="mini_black">세종</span>
+                                                |  주/야간 : <span class="mini_black">주간</span>
+                                                |  졸업작품 : <span class="mini_black">스몰스몰</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2012.03 ~ 2015.02</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                원화여자고등학교 졸업
+                                            </div>
+                                            <div class="mini_gray">
+                                                문과계열
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--경험/활동/교육 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>경험/활동/교육</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2025.03 ~ 2025.05</div>
+                                        <div class="detail">
+                                            <div class="mini_gray">
+                                                엠비씨(MBC)아카데미 컴퓨터교육센터 신림캠퍼스
+                                            </div>
+                                            <div class="main_black">
+                                                [영상편집]모션그래픽(포토샵,일러스트,프리미어,에펙)&포트폴리오 수료
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.07 ~ 2021.12</div>
+                                        <div class="detail">
+                                            <div class="mini_gray">
+                                                더조은컴퓨터아트학원 일산점
+                                            </div>
+                                            <div class="main_black">
+                                                [스마트혼합] UI/UX 웹디자인(웹퍼블리셔) 수료
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.05 ~ 2021.07</div>
+                                        <div class="detail">
+                                            <div class="mini_gray">
+                                                더조은컴퓨터아트학원 일산점
+                                            </div>
+                                            <div class="main_black">
+                                                웹디자인&웹퍼블리셔 취업과정(포토샵, 일러스트, HTML5, CSS3) 수료
+                                            </div>
+                                        </div>
+                                    </td>
+                               </tr>
+                            </tbody>
+                        </table>
+                        <!--자격 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>자격</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.09</div>
+                                        <div class="detail">
+                                            <div class="main_black">웹디자인기능사</div>
+                                            <div class="mini_gray">한국산업인력공단</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2020.02</div>
+                                        <div class="detail">
+                                            <div class="main_black">그래픽기술자격(GTQ) 1급</div>
+                                            <div class="mini_gray">한국생산성본부(KPC)</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2008.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">워드프로세서2급</div>
+                                            <div class="mini_gray">대한상공회의소</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2008.03</div>
+                                        <div class="detail">
+                                            <div class="main_black">정보기술자격(ITQ)한글파워포인트 B등급</div>
+                                            <div class="mini_gray">한국생산성본부(KPC)</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--포트폴리오 링크 테이블-->
+                         <table>
+                            <thead>
+                                <tr>
+                                    <th>포트폴리오 링크</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="detail">
+                                            <div class="link_blue">
+                                                <a href="https://garmege.github.io/portfolio/" target="_blank" title="새창열림">https://garmege.github.io/portfolio/</a>
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : HTML, CSS, JS, 포토샵, 일러스트레이터, 피그마
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+               </div>
+            </div>
+            <!--작업물&참여프로젝트 목록 페이지-->
+            <div class="page" id="page_3">
+                 <div class="table_wrap">
+                    <div class="table_unit">
+                        <!--작업물 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>작업물</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2019.12 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                사내 홈페이지 웹디자인/퍼블리싱 및 유지보수
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">포토샵, 일러스트레이터, 피그마</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                                <br>
+                                                링크 : <a href="https://www.stadt.co.kr" target="_blank" title="새창열림">https://www.stadt.co.kr</a> (슈타트 본사 2025.06.19 기준)
+                                                <br>
+                                                링크 : <a href="http://ubi.re.kr" target="_blank" title="새창열림">http://ubi.re.kr</a> (슈타트 기업부설연구소 UBI 2025.06.19 기준)
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2019.12 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                사내 브로슈어 편집디자인 및 유지보수
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">포토샵, 일러스트레이터</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2024.09 ~ 2024.11</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                소프트웨어 사용자 매뉴얼 편집디자인
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">포토샵, 일러스트레이터, 인디자인, 피그마</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2019.12 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                사내 제안서 PPT 템플릿 디자인
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">파워포인트, 포토샵, 일러스트레이터</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.01 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                사내 로고 및 각종 업무에 필요한 디자인 소스 제작
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">파워포인트, 포토샵, 일러스트레이터</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2021.01 ~ 2024.12</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                사내 사무용품 굿즈 디자인(명패, 명함, 소/대봉투 등)
+                                            </div>
+                                            <div class="mini_gray">
+                                                작업툴 : <span class="mini_black">일러스트레이터</span>
+                                                | 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--참여 프로젝트 테이블-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>참여 프로젝트</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="period">2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                네오티시스 대중교통 웹서비스
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                경상북도 재난대응 긴급상황 정보공유 시스템
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2024.07 ~ 2024.10</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                탄소중립 선도도시 보령시 조성계획(안)
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">PPT 이미지 소스 제작, 홍보 포스터 제작</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                녹색센터 소규모 사업장 모니터링 시스템
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023 ~ 2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                김포시 탄소중립 대시보드
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023 ~ 2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                재난안전연구원 재난현장 실시간 영상데이터 프로토타입 시스템
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023 ~ 2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                전주시 도시 기상기후정보활용 융합서비스 개발
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023 ~ 2024</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                전주 도시환경플랫폼 고도화 모바일 웹/앱 서비스
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023.01 ~ 2023.10</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                시간 풍경이 흐르는 배나무샘골 도시재생사업 성과분석 용역
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">보고서 기획 및 제작, 인터뷰, 현장 조사</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                DIP 지역간 비즈니스 협력 모델
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023.07</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                경기도북부유아체험교육원 지능형 IoT 활용 미래형 유아체험교육시스템 구축 정보화전략(ISP) 수립
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">PPT 템플릿 제작</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2023.01 ~ 2023.10</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                공간정보 포털 활용 시스템<span class="mini_blue">개인외주작업</span>
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2022.12 ~ 2023.05</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                성주 공간정보 포털 활용 시스템 구축
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2022.01 ~ 2023.08</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                울진군 디지털 트윈 해안도로 침하예측 시스템 구축
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="period">2022</div>
+                                        <div class="detail">
+                                            <div class="main_black">
+                                                강창 안심 미세먼지 모니터링 시스템
+                                            </div>
+                                            <div class="mini_gray">
+                                                담당업무 : <span class="mini_black">웹디자인 및 웹퍼블리싱</span>
+                                                | 업무 기여도 : <span class="mini_black">100%(1인)</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+               </div>
+            </div>
+            <!--포트폴리오 페이지-->
+            <div class="page portfolio" id="page_4">
+                <!--왼쪽 패널-->
+               <div class="left">
+                    <div class="top_text">
+                        <h3 class="panel_title">포트폴리오</h3>
+                        <p class="guide_text">
+                            이미지를 클릭하시면 <br>자세히 보실 수 있습니다
+                        </p>
+                    </div>
+               </div>
+               <!--포트폴리오 이미지 배열-->
+               <div class="right">
+                    <div class="item_wrap">
+                        <div class="item" data-portfolio="stadt_homepage">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/stadt_homepage.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>회사 홈페이지(슈타트) 웹디자인/웹퍼블리싱/유지보수</h4>
+                                <p>2021. 12. ~ 2024. 12.</p>
+                            </div>
+                        </div>
+                        <div class="item" data-portfolio="ubi_homepage">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/ubi_homepage.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>회사 기업부설연구소 홈페이지(UBI) 웹디자인/웹퍼블리싱</h4>
+                                <p>2023 ~ 2024</p>
+                            </div>
+                        </div>
+                        <div class="item book" data-portfolio="stadt_brochure">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/stadt_brochure.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>회사 브로슈어 편집디자인/유지보수</h4>
+                                <p>2020 ~ 2024</p>
+                            </div>
+                        </div>
+                        <div class="item book" data-portfolio="windmap_manual">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/windmap_manual.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>소프트웨어 사용자 매뉴얼 편집디자인</h4>
+                                <p>2024</p>
+                            </div>
+                        </div>
+                        <div class="item book" data-portfolio="dgng_baekseo">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/dgng_baekseo.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>대구 남구 배나무샘골 성과보고집 편집디자인 + 주민 인터뷰</h4>
+                                <p>2023</p>
+                            </div>
+                        </div>
+                        <div class="item book" data-portfolio="zzz_motiongraphic">
+                            <div class="image_box">
+                                <img src="../img/portfolio/mockup/zzz_motiongraphic_web.png" alt="">
+                            </div>
+                            <div class="project_text">
+                                <h4>젠레스 존 제로 공식 홈페이지 - 메인 페이지 모션그래픽(개인작)</h4>
+                                <p>2025. 05.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <!--포트폴리오 이미지박스 클릭 -> 상세내용 팝업-->
+        <div class="popup_wrap" id="portfolio_popup_wrap">
+           
+        </div>
+    </main>
+    <footer>
+        <div class="center">
+            <div class="left">
+                2025
+            </div>
+            <div class="right"></div>
+        </div>
+    </footer>
+</body>
+</html>
