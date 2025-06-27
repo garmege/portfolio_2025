@@ -146,8 +146,11 @@ header .center {
 }
 
 header .center > div, footer .center > div {
-    display: inline-flex;
     font-size: 2.4rem;
+}
+
+header .copyright {
+    display: none;
 }
 
 #ham_btn {
@@ -167,6 +170,12 @@ footer .center {
     width: 60%;
     display: flex;
     justify-content: space-between;
+}
+
+footer .center .copyright {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
 }
 
 
@@ -233,8 +242,9 @@ footer .center {
         left: 100%;
         transition: left 0.5s ease;
         z-index: 2;
-        background-color: #ebebeb;
-        display: block;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
     }
 
     header .center .gnb ul {
@@ -266,6 +276,16 @@ footer .center {
         background-image: url(../img/common/ham_white.png);
     }
 
+    header .copyright {
+        color: #bebebe;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: auto;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        display: block;
+    }
+
     footer {
         padding-top: unset;
         height: 6rem;
@@ -274,5 +294,9 @@ footer .center {
     footer .center {
         width: calc(100% - 4rem);
         align-items: center;
+    }
+
+    footer .center .copyright {
+        display: none;
     }
 }
