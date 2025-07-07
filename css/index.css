@@ -483,6 +483,7 @@ td .detail {
     .page {
         padding: 2rem;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .info_box {
