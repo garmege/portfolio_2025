@@ -255,7 +255,7 @@
     }
 
     .panel_title {
-        margin-bottom: 2rem;
+        margin-bottom: 0.4rem;
     }
 
     .detail_title {
@@ -281,7 +281,10 @@
         margin-top: 0;
         width: unset;
         margin-left: auto;
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 
+    .popup_close p {
+        display: none;
+    }
 }

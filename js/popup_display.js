@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 popupWrap.innerHTML = html;
                 popupWrap.style.display = 'flex';
 
-                // 팝업 내부 요소가 로드된 후에 이벤트 바인딩
+                // 팝업 내부 요소가 로드된 후에 실행시킬 이벤트 여기에 쓰기
                 bindPopupCloseEvents();
 
                  // 1. CSS 동적 로드
@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 popupCSS.rel = 'stylesheet';
                 popupCSS.href = 'css/popup.css'; // popup.html에 맞는 CSS 경로
                 document.head.appendChild(popupCSS);
-
-                popupScript.defer = true; // 로딩 순서 안정성 확보
-                document.body.appendChild(popupScript);
             })
             .catch(err => {
                 console.error('에러 발생:', err);

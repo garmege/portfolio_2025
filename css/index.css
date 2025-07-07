@@ -273,6 +273,7 @@ td .detail {
 .guide_text {
     font-size: 1.8rem;
     font-weight: 400;
+    color: #5a5a5a;
 }
 
 .portfolio .right {
@@ -508,6 +509,10 @@ td .detail {
 
     .table_unit table {
         overflow: hidden;
+    }
+
+    .item .project_text {
+        padding: 1.6rem;
     }
 }
 
